@@ -10,13 +10,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100 " src="template/img/slides_bg.jpg" alt="First slide">
+                        <img class="d-block w-100 " src="template/img/slide2.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="template/img/slides_bg.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="template/img/slide2.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="template/img/slides_bg.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="template/img/slide2.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -100,7 +100,7 @@
         <div class="center">
             <div class="grid center" data-masonry='{"itemSelector": ".grid-item", "columnWidth": 76.1, "percentPosition": true}'>
                 <a href="/category/<? echo $categories[1]['id'] ?>" class="grid-item grid-item--wd2">
-                    <img src="template/img/woman.jpg" alt="" class="grid-item_img">
+                    <img src="template/img/woman.jpeg" alt="" class="grid-item_img">
                     <span class="grid-item-name"><? echo $categories[1]['name'] ?></span>
                 </a>
                 <a href="/category/<? echo $categories[3]['id'] ?>" class="grid-item">
@@ -120,7 +120,7 @@
                     <span class="grid-item-name"><? echo $categories[8]['name'] ?></span>
                 </a>
                 <a href="/category/<? echo $categories[0]['id'] ?>" class="grid-item grid-item--wd2 grid-item--wd3">
-                    <img src="template/img/man.jpg" alt="" class="grid-item_img">
+                    <img src="template/img/men.jpg" alt="" class="grid-item_img">
                     <span class="grid-item-name"><? echo $categories[0]['name'] ?></span>
                 </a>
                 <a href="/category/<? echo $categories[5]['id'] ?>" class="grid-item grid-item--wd4">
