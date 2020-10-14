@@ -1,0 +1,57 @@
+/*LOGIN*/
+
+.sign,
+.signUp {
+    margin: auto;
+    max-width: 400px;
+    padding: 24px 36px;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15), 4px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.signUp {
+    max-width: 620px;
+}
+
+.registration {
+    margin-top: 3em;
+}
+
+label {
+    margin-top: 2rem;
+}
+
+p {
+    margin: 0 !important;
+}
+.form-controle{
+    margin: 2.2rem 0px;
+    width: 100%;
+    height: 100%; 
+    display: block;
+}
+.sign_button {
+    border: 2px #943855 solid;
+    background: none;
+    color: #943855;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.sign_button:hover {
+    border: 2px #6e2142 solid;
+    background: #6e2142;
+    color: #FFF;
+}
+
+.sign_button:active {
+    border: 2px #6e2142 solid;
+    color: #6e2142;
+    background: #FFF;
+}

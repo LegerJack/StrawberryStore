@@ -1,0 +1,133 @@
+.basket-container {
+    padding: 2em;
+}
+
+.product-cart--body {
+    position: relative;
+}
+
+.product-cart--img,
+.product-cart--discription {
+    display: inline-block;
+}
+
+.product-cart--img,
+.product-cart--img img {
+    text-align: center;
+    width: auto;
+    height: 240px;
+}
+
+.product-cart--discription {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+td[name="color"],
+td[name="size"],
+td[name="articl"] {
+    text-align: right;
+    font-weight: 700;
+}
+
+.product-cart--elements {
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.product-cart--name {
+    margin: 10px 20px 32px;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.product-cart--price,
+.product-cart--summ {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2.5em 0;
+    text-align: center;
+}
+
+.product-cart--quantity {
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+
+.product-cart--name a {
+    color: #6e2142 !important;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.quantity-minus,
+.quantity-plus {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #6e2142;
+    background: #6e2142;
+    position: relative;
+    padding: 0;
+    top: 4px;
+}
+
+.quantity-minus:hover,
+.quantity-minus:hover::before,
+.quantity-plus:hover,
+.quantity-plus:hover::before {
+    background: #FFF;
+    color: #6e2142;
+}
+
+.quantity-minus::before {
+    content: '-';
+    position: absolute;
+    color: #FFF;
+    width: 100%;
+    height: 50%;
+    top: -60%;
+    right: 0;
+    font-size: 20px;
+}
+
+.quantity-plus::before {
+    content: '+';
+    position: absolute;
+    color: #FFF;
+    width: 100%;
+    height: 20%;
+    top: -35%;
+    right: 0%;
+}
+
+.quntity--value {
+    border: none;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.price-control {
+    position: relative;
+}
+
+.product-delete {
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.product-delete a {
+    color: #000 !important;
+    transition: .3s;
+}
+
+.product-delete a:hover {
+    color: #6e2142 !important;
+    font-weight: 900;
+}

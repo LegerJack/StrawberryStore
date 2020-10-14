@@ -1,0 +1,74 @@
+.wrapp-hor-item img,
+.wrapp-hor-hit-item img {
+    width: 100%;
+}
+
+.wrapp-hor-item,
+.wrapp-hor-hit-item {
+    display: inline-block;
+    width: 30%;
+}
+
+.wrapper-hit,
+.wrapper {
+    position: relative;
+}
+
+.btn-control {
+    color: #6e2142;
+    border: 2px solid #6e2142;
+    border-radius: 100%;
+    background: #FFF;
+    font-size: 36px;
+    padding: 12px 20px;
+    text-align: center;
+    position: relative;
+    width: 2em;
+    height: 2em;
+    transition: .4s;
+}
+
+.btn-control:hover {
+    opacity: .7;
+}
+
+.btn-control--right {
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+    transform: initial;
+}
+
+.btn-control--left {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+}
+
+.btn-control--right::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 26px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border: .2em solid #6e2142;
+    border-top: none;
+    border-left: none;
+    width: .6em;
+    height: .6em;
+}
+
+.btn-control--left::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    border: .2em solid #6e2142;
+    border-top: none;
+    border-left: none;
+    width: .6em;
+    height: .6em;
+}
