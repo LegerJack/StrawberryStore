@@ -32,11 +32,13 @@
         </div>
     </div>
 </footer>
-<script src="template/js/imageControl.js"></script>
-<script src="template/js/addtoCard.js"></script>
-<script src="template/js/carousel.js"></script>
+
 <script src="http://malsup.github.com/jquery.cycle2.js"></script>
-<script src="template/js/dopCarousel.js"></script>
+
+<script src="{{url('template/js/imageControl.js')}}"></script>
+<script src="{{url('template/js/addtoCard.js')}}"></script>
+<script src="{{url('template/js/carousel.js')}}"></script>
+<script src="{{url('template/js/dopCarousel.js')}}"></script>
 
 <script>
     const carousel = new SliderCarousel({
@@ -59,15 +61,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function(){
-        $(".add-to-card_button").click(function ()  {
-            var id = $(this).attr("data-id");
-            $.post("/cart/addAjax/"+id, {}, function (data){
-                $("#cart-count").html(data);
-            });
-            return false;
-        });
-    });
+    let addToCartButton = document.querySelectorAll('.add-to-card_button');
+    addToCartButton.forEach((button)=> {
+        button.addEventListener('click', function () {
+            let itemID = this.getAttribute("data-id");
+            fetch (new URL(`/cart/addToBasket/${itemID}`, `${location.protocol}//${location.host}/`))
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelector('#cart-count').innerHTML = data;
+                })
+        })
+    })
 </script>
 </body>
 </html>

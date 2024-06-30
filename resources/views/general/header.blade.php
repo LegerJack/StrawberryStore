@@ -44,14 +44,32 @@
                     </form>
                 </div>
                 <div class="col-lg-3 mt-2 flexible left-margin">
-                    <div class="adress"><a href="#"><i class="fas fa-map-marker-alt"></i> <br>Адрес</a></div>
-{{--                    <? if (User::isGuest()): ?>--}}
-{{--                    <div class="reg-user unable"><a href="user/login"><i class="fas fa-user"></i><br>Вход</a></div>--}}
-{{--                    <? else : ?>--}}
-{{--                    <div class="reg-user center unable "><a href="user/logout"><i class="fas fa-user"></i><br>Выход</a></div>--}}
-{{--                    <div class="reg-user center unable "><a href="cabinet"><i class="fas fa-book-open"></i><br>Аккаунт</a></div>--}}
+                    <div class="adress">
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i> <br>Адрес
+                        </a>
+                    </div>
 
-{{--                    <? endif; ?>--}}
+                    @guest
+                        <div class="reg-user unable">
+                            <a href="user/login">
+                                <i class="fas fa-user"></i><br>Вход
+                            </a>
+                        </div>
+                    @endguest
+
+                    @auth
+                        <div class="reg-user center unable ">
+                            <a href="user/logout">
+                                <i class="fas fa-user"></i><br>Выход
+                            </a>
+                        </div>
+                        <div class="reg-user center unable ">
+                            <a href="cabinet">
+                                <i class="fas fa-book-open"></i><br>Аккаунт
+                            </a>
+                        </div>
+                    @endauth
                     <div class="basket">
                         <a href="cart/">
                             <i class="fas fa-shopping-basket"></i>
