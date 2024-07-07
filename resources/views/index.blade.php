@@ -8,46 +8,8 @@
 
         <x-block.top-products/>
 
-{{--        <div class="center">--}}
-{{--            <div class="grid center" data-masonry='{"itemSelector": ".grid-item", "columnWidth": 76.1, "percentPosition": true}'>--}}
-{{--                <a href="/category/<? echo $categories[1]['id'] ?>" class="grid-item grid-item--wd2">--}}
-{{--                    <img src="template/img/woman.jpeg" alt="" class="grid-item_img">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[1]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[3]['id'] ?>" class="grid-item">--}}
-{{--                    <img src="template/img/cosmetic.jpg" alt="" class="grid-item_img img-fluid">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[3]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[4]['id'] ?>" class="grid-item">--}}
-{{--                    <img src="template/img/pro-cosmet.jpg" alt="" class="grid-item_img">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[4]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[6]['id'] ?>" class="grid-item">--}}
-{{--                    <img src="template/img/fur.jpg" alt="" class="grid-item_img">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[6]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[8]['id'] ?>/" class="grid-item">--}}
-{{--                    <img src="template/img/acsesoire.jpg" alt="" class="grid-item_img">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[8]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[0]['id'] ?>" class="grid-item grid-item--wd2 grid-item--wd3">--}}
-{{--                    <img src="template/img/men.jpg" alt="" class="grid-item_img">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[0]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[5]['id'] ?>" class="grid-item grid-item--wd4">--}}
-{{--                    <img src="template/img/bijuteriya.jpg" alt="" class="grid-item_img">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[5]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[7]['id'] ?>" class="grid-item grid-item--wd4">--}}
-{{--                    <img src="template/img/electro.jpg" alt="" class="grid-item_img">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[7]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--                <a href="/category/<? echo $categories[2]['id'] ?>" class="grid-item grid-item--wd2">--}}
-{{--                    <img src="template/img/kids.jpg" alt="" class="grid-item_img grid-item--hg2">--}}
-{{--                    <span class="grid-item-name"><? echo $categories[2]['name'] ?></span>--}}
-{{--                </a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <x-block.category-list/>
+
         <x-block.top-products/>
 {{--        <div id="hit-prod" class="hit-prod">--}}
 {{--            <div class="container">--}}

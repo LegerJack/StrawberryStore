@@ -14,7 +14,7 @@
                 @foreach($slides as $slide)
                     <div @class(['carousel-item', 'active' => $loop->first])>
                         <img class="d-block w-50"
-                             src="{{ empty($slide->picture_path) ? asset('public/assets/images/no-image.svg') : '' }}"
+                             src="{{ empty($slide->picture_path) ? asset('public/assets/images/no-image.svg') : $slide->picture_path }}"
                              alt="{{ $slide->name }}"
                         >
                     </div>
