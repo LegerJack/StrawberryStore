@@ -3,7 +3,7 @@
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 @foreach($slides as $slide)
-                    <li data-target="#carouselIndicators" data-slide-to="{{$slide->id}}"
+                    <li data-target="#carouselIndicators" data-slide-to="{{ $slide->id }}"
                         @class(['active' => $loop->first])
                     ></li>
                 @endforeach
@@ -14,8 +14,8 @@
                 @foreach($slides as $slide)
                     <div @class(['carousel-item', 'active' => $loop->first])>
                         <img class="d-block w-50"
-                             src="{{empty($slide->picture_path) ? asset('public/assets/images/no-image.svg') : ''}}"
-                             alt="{{$slide->name}}"
+                             src="{{ empty($slide->picture_path) ? asset('public/assets/images/no-image.svg') : '' }}"
+                             alt="{{ $slide->name }}"
                         >
                     </div>
                 @endforeach

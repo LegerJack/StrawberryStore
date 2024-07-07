@@ -2,44 +2,9 @@
 
 <main class="upHead">
     <div class="container">
-        <x-slider/>
+        <x-slider slider-type="auto"/>
 
-{{--        <div id="cart_carousel" class="cart_carousel">--}}
-{{--            <div class="container">--}}
-{{--                <div class="underline"></div>--}}
-{{--                <div class="wrapper">--}}
-{{--                    <div class="wrapp-hor">--}}
-{{--                        <?php if (!empty($sliderProducts)) {--}}
-{{--                            foreach ($sliderProducts as $recomend) : ?>--}}
-{{--                                <div class="card">--}}
-{{--                                    <a href="/product/<? echo $recomend['id'] ?>"><img src="/template/img/Jilet.jpg" alt="" class="card-img-top"></a>--}}
-{{--                                    <div class="card-body">--}}
-{{--                                        <div class="row">--}}
-{{--                                            <div class="col-12">--}}
-{{--                                                <a href="/product/<? echo $recomend['id'] ?>" class="card-title">--}}
-{{--                                                    <p><? echo $recomend['name'] ?></p>--}}
-{{--                                                </a>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="col-12">--}}
-{{--                                                <h5 class="card-price"><? echo $recomend['price'] ?> ₽</h5>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="card-button center">--}}
-{{--                                            <a href="/cart/add/<? echo $recomend['id'] ?>" data-id="<? echo $recomend['id']; ?>" class="add-to-card_button">Добавить в корзину</a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="center heart">--}}
-{{--                                        <i class="far fa-heart"></i>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            <?php endforeach;--}}
-{{--                        } ?>--}}
-{{--                    </div>--}}
-{{--                    <button id="test-left" class="btn-control btn-control--left"></button>--}}
-{{--                    <button id="test-right" class="btn-control btn-control--right"></button>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <x-slider slider-type="products"/>
 
 {{--        <div class="prod__want">--}}
 {{--            <div class="container">--}}
@@ -73,7 +38,6 @@
 {{--                    } ?>--}}
 {{--                </div>--}}
 {{--            </div>--}}
-
 {{--        </div>--}}
 
 {{--        <div class="center">--}}

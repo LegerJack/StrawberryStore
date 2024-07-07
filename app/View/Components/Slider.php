@@ -13,7 +13,9 @@ class Slider extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(
+        public string $sliderType = "auto"
+    )
     {
         $this->sliderData = Products::where('active', 1)
             ->take(6)
@@ -25,6 +27,6 @@ class Slider extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.slider', ['slides' => $this->sliderData]);
+        return view("components.slider_{$this->sliderType}", ['slides' => $this->sliderData]);
     }
 }
