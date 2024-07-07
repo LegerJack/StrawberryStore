@@ -19,7 +19,6 @@ return new class extends Migration
             $table->integer('quantity')->default(0);
             $table->string('description')->nullable();
             $table->string('picture_path')->nullable();
-            $table->integer('category_id')->nullable();
             $table->timestamps();
         });
     }
