@@ -27,6 +27,6 @@ class Slider extends Component
      */
     public function render(): View|Closure|string
     {
-        return view("components.slider_{$this->sliderType}", ['slides' => $this->sliderData]);
+        return view("components.slider.{$this->sliderType}", ['slides' => $this->sliderData]);
     }
 }
