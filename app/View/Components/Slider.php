@@ -14,11 +14,12 @@ class Slider extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $sliderType = "auto"
+        public string $sliderType = "auto",
+        public int $slideLimit = 6
     )
     {
-        $this->sliderData = Products::where('active', 1)
-            ->take(6)
+        $this->sliderData = Products::where('active', true)
+            ->take($this->slideLimit)
             ->get();
     }
 
