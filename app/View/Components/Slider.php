@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Products;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -14,7 +15,9 @@ class Slider extends Component
      */
     public function __construct()
     {
-        //
+        $this->sliderData = Products::where('active', 1)
+            ->take(6)
+            ->get();
     }
 
     /**

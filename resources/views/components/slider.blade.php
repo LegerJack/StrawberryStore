@@ -13,7 +13,10 @@
             <div class="carousel-inner">
                 @foreach($slides as $slide)
                     <div @class(['carousel-item', 'active' => $loop->first])>
-                        <img class="d-block w-100 " src="{{$slides->imagePath}}" alt="First slide">
+                        <img class="d-block w-50"
+                             src="{{empty($slide->picture_path) ? asset('public/assets/images/no-image.svg') : ''}}"
+                             alt="{{$slide->name}}"
+                        >
                     </div>
                 @endforeach
             </div>
