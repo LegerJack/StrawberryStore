@@ -1,4 +1,4 @@
-@if(!empty($slides))
+@if(!empty($slides) && $slides->count() !== 0)
     <div id="hit-prod" class="hit-prod">
         <div class="container">
             <h2>Хит продаж</h2>

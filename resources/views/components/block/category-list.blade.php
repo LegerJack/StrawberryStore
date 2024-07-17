@@ -1,4 +1,4 @@
-@if(!empty($categories))
+@if(!empty($categories) && $categories->count() !== 0)
     <div class="center">
         <div class="grid center" data-masonry='{"itemSelector": ".grid-item", "columnWidth": 76.1, "percentPosition": true}'>
             @foreach($categories as $category)

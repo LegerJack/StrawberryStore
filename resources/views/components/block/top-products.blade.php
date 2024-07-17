@@ -1,4 +1,4 @@
-@if(!empty($products))
+@if(!empty($products) && $products->count() !== 0)
     <div class="prod__want">
         <div class="container">
             <div class="row">

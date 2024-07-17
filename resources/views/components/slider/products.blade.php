@@ -1,4 +1,4 @@
-@if(!empty($slides))
+@if(!empty($slides) && $slides->count() !== 0)
     <div id="cartCarousel" class="cart_carousel">
         <div class="container">
             <div class="underline"></div>

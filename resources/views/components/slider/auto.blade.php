@@ -1,4 +1,4 @@
-@if(!empty($slides))
+@if(!empty($slides) && $slides->count() !== 0)
     <div class="product_carousel mx-auto">
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
