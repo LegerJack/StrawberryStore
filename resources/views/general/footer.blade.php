@@ -35,10 +35,10 @@
 
 <script src="http://malsup.github.com/jquery.cycle2.js"></script>
 
-<script src="{{url('template/js/imageControl.js')}}"></script>
-<script src="{{url('template/js/addtoCard.js')}}"></script>
-<script src="{{url('template/js/carousel.js')}}"></script>
-<script src="{{url('template/js/dopCarousel.js')}}"></script>
+<script src="{{ url('resources/js/imageControl.js') }}"></script>
+<script src="{{ url('resources/js/addtoCard.js') }}"></script>
+<script src="{{ url('resources/js/carousel.js') }}"></script>
+<script src="{{ url('resources/js/dopCarousel.js') }}"></script>
 
 <script>
     const carousel = new SliderCarousel({
