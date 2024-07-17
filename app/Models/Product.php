@@ -11,6 +11,8 @@ class Product extends Model
 {
     use HasFactory;
 
+    protected $table = 'product';
+
     public function categories(): BelongsToMany
     {
         return $this->belongsToMany(Category::class);
