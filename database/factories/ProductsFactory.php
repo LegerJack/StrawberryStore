@@ -22,6 +22,7 @@ class ProductsFactory extends Factory
             "price" => fake()->randomFloat(2, 1, 100),
             "quantity" => fake()->randomDigit(),
             "description" => fake()->text(),
+            "picture_path" => fake()->imageUrl(640, 640, 'berries'),
         ];
     }
 }

@@ -22,6 +22,7 @@ class CategoriesFactory extends Factory
             'active' => fake()->boolean(),
             'created_at' => now(),
             'updated_at' => now(),
+            "picture_path" => fake()->imageUrl(640, 640, 'berries'),
         ];
     }
 }
