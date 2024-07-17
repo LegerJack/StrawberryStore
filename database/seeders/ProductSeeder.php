@@ -32,5 +32,9 @@ class ProductSeeder extends Seeder
                 );
             }
         );
+
+        ProductImages::factory()
+            ->count(30)
+            ->create();
     }
 }
