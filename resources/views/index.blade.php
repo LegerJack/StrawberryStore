@@ -1,9 +1,11 @@
+@php use App\Models\Products; @endphp
+
 @include ('general.header')
 <main class="upHead">
     <div class="container">
         <x-slider slider-type="auto"/>
 
-        <x-slider slider-type="products"/>
+        <x-slider slider-model="{{ Products::class }}" slider-type="products"/>
 
         <x-block.top-products/>
 
@@ -11,7 +13,7 @@
 
         <x-block.top-products/>
 
-        <x-slider slider-type="hit"/>
+        <x-slider slider-model="{{ Products::class }}" slider-type="hit"/>
     </div>
 </main>
 @include ('general.footer')
