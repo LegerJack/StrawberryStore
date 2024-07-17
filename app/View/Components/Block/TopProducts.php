@@ -13,11 +13,9 @@ class TopProducts extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(int $count = 8)
     {
-        $this->products = Products::where('active', 1)
-            ->take(6)
-            ->get();
+        $this->products = Products::where('active', 1)->take($count)->get();
     }
 
     /**

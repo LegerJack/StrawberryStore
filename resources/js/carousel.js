@@ -57,7 +57,6 @@ class SliderCarousel {
             }
             .prod-slider__item{
                 flex: 0 0 ${this.option.widthSlide}% !important;
-                margin: auto 12px !important;
             }
         `;
         document.head.appendChild(style);
