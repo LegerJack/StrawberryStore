@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Block;
 
-use App\Models\Products;
+use App\Models\Product;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -15,7 +15,7 @@ class TopProducts extends Component
      */
     public function __construct(int $count = 8)
     {
-        $this->products = Products::where('active', 1)->take($count)->get();
+        $this->products = Product::where('active', 1)->take($count)->get();
     }
 
     /**

@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Card;
 
-use App\Models\Products;
+use App\Models\Product as ProductModel;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -12,8 +12,8 @@ class Product extends Component
     /**
      * Create a new component instance.
      */
-    public Products $product;
-    public function __construct(Products $product) {}
+    public ProductModel $product;
+    public function __construct(ProductModel $product) {}
 
     /**
      * Get the view / contents that represent the component.

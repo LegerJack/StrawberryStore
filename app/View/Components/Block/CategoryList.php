@@ -2,7 +2,7 @@
 
 namespace App\View\Components\Block;
 
-use App\Models\Categories;
+use App\Models\Category;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -15,7 +15,7 @@ class CategoryList extends Component
      */
     public function __construct()
     {
-        $this->categories = Categories::where("active", 1)
+        $this->categories = Category::where("active", 1)
             ->take(9)
             ->get();
     }

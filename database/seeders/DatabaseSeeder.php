@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\Sliders;
+use App\Models\Slider;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,9 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        (new ProductsSeeder)->run();
+        (new ProductSeeder)->run();
 
-        Sliders::factory()
+        Slider::factory()
             ->count(8)
             ->create();
     }

@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('sliders', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->string('name');
+        Schema::create('product', function (Blueprint $table) {
+            $table->id()->autoIncrement();
+            $table->string('name')->nullable(false);
             $table->boolean('active')->default(false);
+            $table->float('price')->default(0);
+            $table->integer('quantity')->default(0);
+            $table->string('description')->nullable();
             $table->string('picture_path')->nullable();
-            $table->text('description')->nullable();
-            $table->integer('sort_order')->default(0);
+            $table->timestamps();
         });
     }
 
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sliders');
+        Schema::dropIfExists('product');
     }
 };

@@ -2,7 +2,7 @@
 
 namespace App\View\Components;
 
-use App\Models\Sliders;
+use App\Models\Slider as SliderModel;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
@@ -15,7 +15,7 @@ class Slider extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $sliderModel = Sliders::class,
+        public string $sliderModel = SliderModel::class,
         public string $sliderType = "auto",
         public int    $slideLimit = 6
     )
