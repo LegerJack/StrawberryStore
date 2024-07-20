@@ -1,18 +1,12 @@
-@php use App\Models\Product; @endphp
+@php
+    use App\Models\Product;
+    use Diglactic\Breadcrumbs\Breadcrumbs;
+@endphp
 
 @include ('general.header')
 <main class="upHead">
     <div class="container">
-{{--        <div class="header_product">--}}
-{{--            <a href="#" class="header_product--back">Назад</a>--}}
-{{--            <nav aria-label="breadcrumb">--}}
-{{--                <ol class="breadcrumb">--}}
-{{--                    <li class="breadcrumb-item"><a href="/">Главная</a></li>--}}
-{{--                    <li class="breadcrumb-item"><a href="/category/<? echo $product['category_id'] ?>"><? echo $category['name'] ?></a></li>--}}
-{{--                    <li class="breadcrumb-item active" aria-current="page"><? echo $product['name'] ?></li>--}}
-{{--                </ol>--}}
-{{--            </nav>--}}
-{{--        </div>--}}
+        {{ Breadcrumbs::render('product', $product) }}
         <div class="product_body">
             <div class="title_product">
                 <h1><b>{{ $product->name }}</b></h1>
@@ -32,7 +26,7 @@
                             @if(!empty($product->picture_path))
                                 <div class="mt-2 dop-img">
                                     <img class="dop-img__img"
-                                         onclick="imgControll('{{ $product->name }}_1')"
+                                         onclick="imgControll(this)"
                                          id="{{ $product->name }}_1"
                                          src="{{ $product->picture_path }}"
                                          alt=""
@@ -42,7 +36,7 @@
                             @foreach($productImages as $image)
                                 <div class="mt-2 dop-img">
                                     <img class="dop-img__img"
-                                         onclick="imgControll('{{ $product->name }}_1')"
+                                         onclick="imgControll(this)"
                                          id="{{ $product->name }}_1"
                                          src="{{ $image->picture_path }}"
                                          alt=""
@@ -51,15 +45,14 @@
                             @endforeach
                         </div>
                         @php $firstPicture = $product->picture_path?: $productImages @endphp
-                        @dump($firstPicture)
                         @if(!empty($firstPicture))
-                        <div class="col-8 col-lg-9 product_img">
-                            <img class="product_img--img"
-{{--                                 src="{{ $firstPicture }}"--}}
-                                 id="glPr"
-                                 alt=""
-                            >
-                        </div>
+                            <div class="col-8 col-lg-9 product_img">
+                                <img class="product_img--img"
+                                     src="{{ $firstPicture }}"
+                                     id="glPr"
+                                     alt=""
+                                >
+                            </div>
                         @endif
                     </div>
                 </div>
