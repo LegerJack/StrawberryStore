@@ -7,7 +7,7 @@
                     ? asset('public/assets/images/no-image.svg')
                     : $category->picture_path;
                 @endphp
-                <a href="/category/{{ $category->id }}" class="grid-item grid-item--wd2">
+                <a href="/catalog/{{ $category->id }}" class="grid-item grid-item--wd2">
                     <img src="{{ $picture }}" alt="" class="grid-item_img">
                     <span class="grid-item-name">{{ $category->name }}</span>
                 </a>

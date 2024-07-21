@@ -18,9 +18,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::controller(CategoryController::class)->prefix('catalog')->group(function () {
-    Route::get('/{category}', 'show');
-});
-Route::controller(ProductsController::class)->prefix('products')->group(function () {
-    Route::get('/{product}', 'show');
-});
+
+Route::controller(CategoryController::class)->prefix('catalog')->group(
+    function () {
+        Route::get('/', 'index');
+        Route::get('/{category}', 'show');
+        Route::controller(ProductsController::class)->prefix('products')->group(
+            function () {
+                Route::get('/{product}', 'show');
+            }
+        );
+    }
+);
+
