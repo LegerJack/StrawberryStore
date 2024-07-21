@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-
+Route::controller(CategoryController::class)->prefix('catalog')->group(function () {
+    Route::get('/{category}', 'show');
+});
 Route::controller(ProductsController::class)->prefix('products')->group(function () {
     Route::get('/{product}', 'show');
 });
