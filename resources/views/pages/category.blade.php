@@ -7,13 +7,9 @@
                     @include('components.card.product', compact('product'))
                 @endforeach
             </div>
-            <!-- Постраничная навигация-->
             <div class="center">
-                <nav class="center">
-                    {{ $products->links() }}
-                </nav>
+                {{ $products->links('general.pagination') }}
             </div>
-
         </div>
     </div>
 </main>
