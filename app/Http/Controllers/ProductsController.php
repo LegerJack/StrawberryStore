@@ -13,6 +13,6 @@ class ProductsController extends Controller
     public function create() {}
     public function show(Product $product): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
-        return view('web.static.product', compact('product'));
+        return view('web.sections.product', compact('product'));
     }
 }
