@@ -24,11 +24,11 @@ Route::get('/', static function () {
 Route::any('/contact', [FormController::class, 'contact'])->name('contact');
 
 Route::get('/login', static function () {
-    return view('pages.sign-in');
+    return view('web.sections.user.sign-in');
 });
 
 Route::get('/register', static function () {
-   return view('pages.sign-up');
+   return view('web.sections.user.sign-up');
 });
 
 Route::controller(CategoryController::class)->prefix('catalog')->group(
@@ -46,6 +46,6 @@ Route::controller(CategoryController::class)->prefix('catalog')->group(
 //Route::post('/send/question', [FormController::class, 'handle']);
 
 Route::get('/basket', static function () {
-    return view('pages.basket');
+    return view('web.sections.basket.index');
 });
 
