@@ -1,5 +1,5 @@
-@include ('general.header')
-<main class="upHead">
+@extends('web.app')
+@section('content')
     <div class="container">
         <h2 class="pl-5"><b>Корзина</b></h2>
         <div class="basket-container" id="basket">
@@ -60,5 +60,4 @@
             @endif
         </div>
     </div>
-</main>
-@include ('general.footer')
+@endsection
