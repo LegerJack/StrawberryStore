@@ -10,8 +10,13 @@ use Illuminate\Http\Request;
 
 class FormController extends Controller
 {
-    public function contact(Request $request, FormActionContract $action): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    public function contact(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
-        return view('pages.contact', $action->handle($request));
+        return view('web.static.contact');
+    }
+
+    public function handleContact(Request $request, FormActionContract $action): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('web.static.contact', $action->handle($request));
     }
 }
