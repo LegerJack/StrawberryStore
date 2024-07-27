@@ -1,4 +1,5 @@
-@include ('general.header')
+@extends('web.app')
+@section('content')
     <div class="prod__want">
         <div class="container">
             <div class="row">
@@ -29,5 +30,4 @@
             </div>
         </div>
     </div>
-
-@include ('general.footer')
+@endsection
