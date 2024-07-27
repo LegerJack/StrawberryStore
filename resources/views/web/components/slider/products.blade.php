@@ -5,7 +5,7 @@
             <div class="wrapper">
                 <div class="wrapp-hor">
                     @foreach ($slides as $slide)
-                        @include('components.card.product', ['product' => $slide])
+                        <x-card.product :product="$slide"/>
                     @endforeach
                 </div>
                 <button id="test-left" class="btn-control btn-control--left"></button>

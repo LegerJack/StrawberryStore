@@ -21,6 +21,6 @@ class ProductsList extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.block.products-list', ['products' => $this->products]);
+        return view('web.components.block.products-list', ['products' => $this->products]);
     }
 }

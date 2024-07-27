@@ -12,14 +12,14 @@ class Product extends Component
     /**
      * Create a new component instance.
      */
-    public ProductModel $product;
-    public function __construct(ProductModel $product) {}
+
+    public function __construct(public ProductModel $product) {}
 
     /**
      * Get the view / contents that represent the component.
      */
     public function render(): View|Closure|string
     {
-        return view('components.card.product', ['product' => $this->product]);
+        return view('web.components.card.product', ['product' => $this->product]);
     }
 }

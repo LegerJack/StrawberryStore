@@ -23,6 +23,6 @@ class TopProducts extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.block.top-products', ['products' => $this->products]);
+        return view('web.components.block.top-products', ['products' => $this->products]);
     }
 }

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             @foreach ($products as $product)
-                @include('components.card.product', compact('product'))
+                <x-card.product :product="$product"/>
             @endforeach
         </div>
         <div class="center">

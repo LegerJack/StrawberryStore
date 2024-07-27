@@ -25,6 +25,6 @@ class CategoryList extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.block.category-list', ['categories' => $this->categories]);
+        return view('web.components.block.category-list', ['categories' => $this->categories]);
     }
 }
