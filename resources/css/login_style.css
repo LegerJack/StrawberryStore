@@ -24,12 +24,7 @@ label {
 p {
     margin: 0 !important;
 }
-.form-control{
-    margin: 2.2rem 0px;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
+
 .sign_button {
     border: 2px #943855 solid;
     background: none;

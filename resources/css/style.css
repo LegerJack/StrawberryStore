@@ -275,14 +275,14 @@ input[type="search"]::-webkit-input-placeholder {
 
 /*........................................CONTENT.........................................*/
 
-.upHead {
+.main-container {
     padding-top: 10px;
     position: relative;
     background-color: #fff;
     flex: 1 0 auto;
 }
 
-.upHead:before {
+.main-container:before {
     content: '';
     position: absolute;
     top: -21px;
