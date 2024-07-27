@@ -1,10 +1,9 @@
-@php
-    use App\Models\Product;
-    use Diglactic\Breadcrumbs\Breadcrumbs;
-@endphp
-
-@include ('general.header')
-<main class="upHead">
+@extends('web.app')
+@section('content')
+    @php
+        use App\Models\Product;
+        use Diglactic\Breadcrumbs\Breadcrumbs;
+    @endphp
     <div class="container">
         {{ Breadcrumbs::render('product', $product) }}
         <div class="product_body">
@@ -88,5 +87,4 @@
         </div>
         <x-slider slider-model="{{ Product::class }}" slider-type="products"/>
     </div>
-</main>
-@include ('general.footer')
+@endsection

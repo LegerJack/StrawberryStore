@@ -20,3 +20,13 @@
         </div>
     </div>
 @endif
+@push('script.footer')
+    <script>
+        (new SliderCarousel({
+            main: '.wrapper-hit',
+            wrap: '.wrapp-hor-hit',
+            next: '#right',
+            prev: '#left',
+        })).init();
+    </script>
+@endpush
