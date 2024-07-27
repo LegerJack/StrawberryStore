@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', static function () {
-    return view('pages.index');
+    return view('web.static.index');
 });
 
 Route::any('/contact', [FormController::class, 'contact'])->name('contact');

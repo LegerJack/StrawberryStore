@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Мы предлагаем вам одежду ,обувь,текстиль,аксессуары и товары от производителей стран Китая,Турции,Украины,Польши,Италии и России">
-    <meta name="keywords" content="одежда, интернет магазин, онлайн магазин">
-    <meta property="og:description" content="Мы предлагаем вам одежду ,обувь,текстиль,аксессуары и товары от производителей стран Китая,Турции,Украины,Польши,Италии и Росси">
-
-    <link rel="stylesheet" href="{{ url('resources/css/style.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/media_style.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/product_style.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/category_style.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/login_style.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/basket_style.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/footer_style.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/carousel.css') }}">
-    <link rel="stylesheet" href="{{ url('resources/css/bootstrap.css') }}">
-
-    <script src="https://kit.fontawesome.com/2f12bf6629.js" crossorigin="anonymous"></script>
-    <title>Strawberry</title>
-</head>
-
-<body>
 <header>
     <div class="header-wrapp">
         <div class="header-top">
@@ -88,5 +61,4 @@
             </ul>
         </div>
     </div>
-
 </header>
