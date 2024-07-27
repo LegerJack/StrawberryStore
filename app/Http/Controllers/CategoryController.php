@@ -12,12 +12,12 @@ class CategoryController extends Controller
 {
     public function index(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
-        return view('pages.catalog');
+        return view('web.static.catalog');
     }
 
     public function show(Category $category): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
     {
         $products = $category->products()->paginate(8);
-        return view('pages.category', compact('category', 'products'));
+        return view('web.static.category', compact('category', 'products'));
     }
 }
