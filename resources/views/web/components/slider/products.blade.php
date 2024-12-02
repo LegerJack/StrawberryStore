@@ -15,12 +15,5 @@
     </div>
 @endif
 @push('script.footer')
-    <script>
-        (new SliderCarousel({
-            main: '.wrapper',
-            wrap: '.wrapp-hor',
-            next: '#test-right',
-            prev: '#test-left',
-        })).init();
-    </script>
+    @vite(['resources/js/hitCarouselInit.js'])
 @endpush

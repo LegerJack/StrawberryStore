@@ -1,9 +1,11 @@
-<link rel="stylesheet" href="{{ url('resources/css/style.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/media_style.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/product_style.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/category_style.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/login_style.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/basket_style.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/footer_style.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/carousel.css') }}">
-<link rel="stylesheet" href="{{ url('resources/css/bootstrap.css') }}">
+@vite([
+    'resources/css/style.css',
+    'resources/css/media_style.css',
+    'resources/css/product_style.css',
+    'resources/css/category_style.css',
+    'resources/css/login_style.css',
+    'resources/css/basket_style.css',
+    'resources/css/footer_style.css',
+    'resources/css/carousel.css',
+    'resources/css/bootstrap.css'
+])
